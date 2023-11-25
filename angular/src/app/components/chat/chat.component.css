@@ -1,0 +1,93 @@
+.chats-place {
+  padding: 0px 10px;
+}
+
+.chats-container {
+  height: 75vh;
+  overflow-y: auto;
+}
+
+.chats {
+  display: flex;
+  flex-direction: column;
+}
+
+.user-message {
+  align-self: flex-start;
+  background-color: #ffd8d8;
+  padding: 5px 10px;
+  border: 1px solid black;
+  border-radius: 7px;
+  margin-bottom: 10px;
+  max-width: 75%;
+}
+
+.gpt-answer {
+  align-self: flex-end;
+  padding: 5px 10px;
+  border: 1px solid black;
+  border-radius: 7px;
+  margin-bottom: 10px;
+  max-width: 75%;
+  background-color: white;
+}
+
+.message-input {
+  display: flex;
+  margin-top: 10px;
+  padding: 5px 10px;
+}
+
+.message-input input {
+  flex: 1;
+  padding: 7px;
+}
+
+.message-input button {
+  font-size: 20px;
+  padding: 0px 20px;
+  color: black;
+  margin-left: 5px;
+  background-color: #c1ffc1;
+  border: none;
+}
+
+/*scroll*/
+
+.chats-container::-webkit-scrollbar {
+  width: 8px;
+}
+
+.chats-container::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 4px;
+}
+
+.chats-container::-webkit-scrollbar-track {
+  background-color: #f5f5f5;
+}
+
+.chats-container::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
+
+.chats-container {
+  overflow-y: scroll;
+}
+
+.chats-container {
+  overflow-y: scroll;
+  scrollbar-width: thin;
+}
+
+.chats-container {
+  scrollbar-width: thin;
+}
+
+.chats-container {
+  -ms-overflow-style: none;
+}
+
+.chats-container:hover::-webkit-scrollbar {
+  width: 8px;
+}

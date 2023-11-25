@@ -1,0 +1,31 @@
+.user-container {
+  padding: 5px;
+}
+
+.user-item {
+  margin-bottom: 5px;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 5px 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.user {
+}
+
+.user:hover {
+  cursor: pointer;
+}
+
+.delete-button {
+  font-size: 11px;
+  padding: 1px 10px;
+  background-color: #ff8080;
+  border-radius: 5px;
+  border: 1px solid red;
+}
+
+.delete-button:hover {
+  cursor: pointer;
+}

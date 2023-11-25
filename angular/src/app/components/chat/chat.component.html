@@ -1,0 +1,17 @@
+<section *ngIf="selectedUserChatId !== -1" class="chats-place">
+  <h2>Chat History for User {{ selectedUserChatId }}</h2>
+  <div class="chats-container">
+    <div class="chats" *ngFor="let chat of chatHistory">
+      <div class="user-message" *ngIf="chat.userMessage !== null">
+        {{chat.userMessage}}
+      </div>
+      <div class="gpt-answer">
+        {{chat.gptAnswer}}
+      </div>
+    </div>
+  </div>
+  <div class="message-input">
+    <input [(ngModel)]="newMessage" placeholder="Type your message" />
+    <button (click)="sendMessage()">></button>
+  </div>
+</section>

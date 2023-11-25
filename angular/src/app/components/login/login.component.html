@@ -1,0 +1,16 @@
+<app-header></app-header>
+
+<section class="user">
+  <form (ngSubmit)="login()" class="login-form">
+    <h3>Login</h3>
+    <div class="form-group">
+      <label for="email">username</label>
+      <input type="text" id="email" [(ngModel)]="userLogin.username" [ngModelOptions]="{standalone: true}">
+    </div>
+    <div class="form-group">
+      <label for="password">password</label>
+      <input type="password" id="password" [(ngModel)]="userLogin.password" [ngModelOptions]="{standalone: true}">
+    </div>
+    <button type="submit" class="submit-button">login</button>
+  </form>
+</section>

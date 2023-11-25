@@ -1,0 +1,14 @@
+<section>
+  <div class="user-container">
+    <div class="user-item" *ngFor="let user of users">
+      <div class="user" (click)="selectUser(user.chatId)">
+        <p>#{{user.id}} {{user.username}}</p>
+        <p>chatId: {{user.chatId}}</p>
+      </div>
+      <button class="delete-button" (click)="deleteUser(user.id)">del</button>
+      <br>
+    </div>
+  </div>
+</section>
+
+

@@ -1,0 +1,14 @@
+<section class="user">
+  <form (ngSubmit)="register()" class="login-form">
+    <h3>Registration</h3>
+    <div class="form-group">
+      <label for="email">username</label>
+      <input type="text" id="email" [(ngModel)]="registerUser.username" [ngModelOptions]="{standalone: true}">
+    </div>
+    <div class="form-group">
+      <label for="password">password</label>
+      <input type="password" id="password" [(ngModel)]="registerUser.password" [ngModelOptions]="{standalone: true}">
+    </div>
+    <button type="submit" class="submit-button">register</button>
+  </form>
+</section>
